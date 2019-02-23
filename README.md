@@ -1,4 +1,7 @@
+# More great plugins
 
+- `gatsby-plugin-offline`
+- `gatsby-transformer-json`
 
 # Thanks
 
