@@ -2,7 +2,7 @@
 title: Markdown Features Test
 date: '2019-03-01T22:12:03.284Z'
 slug: example-markdown-features-test
-layout: page
+layout: post
 tags: ['markdown']
 category: example
 ---
