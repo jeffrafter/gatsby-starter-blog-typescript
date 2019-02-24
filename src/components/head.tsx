@@ -7,7 +7,9 @@ type StaticQueryData = {
     siteMetadata: {
       title: string
       description: string
-      author: string
+      author: {
+        name: string
+      }
     }
   }
 }
@@ -16,7 +18,7 @@ interface Props {
   readonly title: string
   readonly description?: string
   readonly lang?: string
-  readonly keywords?: Array<string>
+  readonly keywords?: string[]
 }
 
 export default class Head extends React.Component<Props> {
@@ -24,12 +26,14 @@ export default class Head extends React.Component<Props> {
     return (
       <StaticQuery
         query={graphql`
-          query StaticQuery {
+          query {
             site {
               siteMetadata {
                 title
                 description
-                author
+                author {
+                  name
+                }
               }
             }
           }
@@ -69,7 +73,7 @@ export default class Head extends React.Component<Props> {
                 },
                 {
                   name: `twitter:creator`,
-                  content: data.site.siteMetadata.author,
+                  content: data.site.siteMetadata.author.name,
                 },
                 {
                   name: `twitter:title`,

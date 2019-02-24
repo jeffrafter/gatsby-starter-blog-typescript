@@ -7,8 +7,11 @@ module.exports = {
     siteUrl: 'https://jeffrafter.github.io/gatsby-starter-blog-typescript',
     author: {
       name: 'Jeff Rafter',
-      url: 'https://twitter.com/jeffrafter',
+      url: 'https://github.com/jeffrafter',
       email: 'jeffrafter@gmail.com',
+    },
+    social: {
+      twitter: 'https://twitter.com/jeffrafter',
     },
   },
   plugins: [
@@ -51,7 +54,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        // siteUrl: `ADD YOUR SITE URL HERE`
+        siteUrl: `https://example.com`,
       },
     },
     {
@@ -75,7 +78,6 @@ module.exports = {
     `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-remark-collection`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-typescript`,
     `gatsby-transformer-sharp`,

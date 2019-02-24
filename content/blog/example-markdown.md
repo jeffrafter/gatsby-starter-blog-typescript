@@ -3,7 +3,7 @@ title: Example Markdown
 date: '2019-02-01T22:12:03.284Z'
 published: true
 slug: example-markdown
-layout: page
+layout: post
 tags: ['markdown']
 category: example
 ---

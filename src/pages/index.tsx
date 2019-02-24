@@ -43,7 +43,7 @@ interface PageQueryData {
     }
   }
   allMarkdownRemark: {
-    edges: Array<{
+    edges: {
       node: {
         excerpt: string
         fields: {
@@ -54,7 +54,7 @@ interface PageQueryData {
           title: string
         }
       }
-    }>
+    }[]
   }
 }
 

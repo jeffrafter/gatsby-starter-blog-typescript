@@ -3,7 +3,7 @@ title: Example Markdown from https://markdown-it.github.io/
 date: '2019-02-01T22:12:03.284Z'
 published: true
 slug: example-markdown-it-markdown
-layout: page
+layout: post
 tags: ['markdown']
 category: example
 ---
