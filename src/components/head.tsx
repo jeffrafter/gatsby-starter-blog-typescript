@@ -16,7 +16,7 @@ interface Props {
   readonly title: string
   readonly description?: string
   readonly lang?: string
-  readonly keywords?: [string]
+  readonly keywords?: Array<string>
 }
 
 export default class Head extends React.Component<Props> {
