@@ -18,7 +18,7 @@ export default function() {
   return (
     <StaticQuery
       query={graphql`
-        query StaticQuery {
+        query {
           site {
             siteMetadata {
               author {
@@ -36,8 +36,8 @@ export default function() {
         return (
           <div>
             <p>
-              Written by <strong>{author.name}</strong> who lives and works in San Francisco
-              building useful things.
+              Written by <strong>{author.name}</strong> who lives and works in Redlands building
+              useful things.
               {` `}
               <a href={social.twitter}>You should follow him on Twitter</a>
             </p>
